@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/stockx.css">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <link rel="icon" type="images\x-icon" href="./assets/X_Green_Digital_RGB-700x800.png">
+        <title>StockX</title>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="container">
+                <h1 class="stock"> StockX</h1>
+
+                <div class="input-container1">
+                    <input type="text" name="text" class="input"
+                        placeholder="Buscar">
+                    <span class="icon">
+                        <svg width="19px" height="19px" viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"><g
+                                id="SVGRepo_bgCarrier"
+                                stroke-width="0"></g><g
+                                id="SVGRepo_tracerCarrier"
+                                stroke-linecap="round" stroke-linejoin="round"></g><g
+                                id="SVGRepo_iconCarrier"> <path opacity="1"
+                                    d="M14 5H20"
+                                    stroke="#000" stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"></path> <path
+                                    opacity="1" d="M14 8H17"
+                                    stroke="#000" stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"></path> <path
+                                    d="M21 11.5C21 16.75 16.75 21 11.5 21C6.25 21 2 16.75 2 11.5C2 6.25 6.25 2 11.5 2"
+                                    stroke="#000" stroke-width="2.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"></path> <path
+                                    opacity="1"
+                                    d="M22 22L20 20" stroke="#000"
+                                    stroke-width="3.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"></path> </g></svg>
+                    </span>
+                </div>
+
+                <div class="conn">
+                    <h1 class="ex"> Explorar </h1>
+                    <h1 class="no"> Noticias </h1>
+                    <h1 class="in"> Informacion </h1>
+                    <h1 class="ayu"> Ayuda</h1>
+                    <h1 class="ven"> Vender</h1>
+                </div>
+
+                <label class="container2">
+                    <input type="checkbox" checked="checked">
+                    <svg class="bell-regular" xmlns="http://www.w3.org/2000/svg"
+                        height="1em" viewBox="0 0 448 512">
+                        <path
+                            d="M224 0c-17.7 0-32 14.3-32 32V49.9C119.5 61.4 64 124.2 64 200v33.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V200c0-75.8-55.5-138.6-128-150.1V32c0-17.7-14.3-32-32-32zm0 96h8c57.4 0 104 46.6 104 104v33.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V200c0-57.4 46.6-104 104-104h8zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z"></path>
+                    </svg>
+                    <svg class="bell-solid" xmlns="http://www.w3.org/2000/svg"
+                        height="1em" viewBox="0 0 448 512">
+                        <path
+                            d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"></path>
+                    </svg></label>
+
+                <button class="boton1" id="bton"> Entrar </button>
+                <button class="boton1"> Registrarse </button>
+
+            </div>
+
+        </header>
+        <main>
+            <div class="container4">
+                <h1 class="sneak">Sneakers</h1>
+                <h1 class="cal">Calzado</h1>
+                <h1 class="ro">Ropa</h1>
+                <h1 class="elec">Electronicos</h1>
+                <h1 class="cro">Cromos</h1>
+                <h1 class="colec">Coleccionables</h1>
+                <h1 class="Acces">Accesorios</h1>
+                <h1 class="tre">Trending Deals</h1>
+            </div>
+
+            <section id="container-slider">    
+                <a href="javascript: funcionEjecutar('anterior');" class="arrowPrev"><i class="fas fa-chevron-circle-left"></i></a>
+                <a href="javascript: funcionEjecutar('siguiente');" class="arrowNext"><i class="fas fa-chevron-circle-right"></i></a>
+                <ul class="listslider">
+                  <li><a itlist="itList_0" href="#" class="item-select-slid"></a></li>
+                  <li><a itlist="itList_1" href="#"></a></li>
+                  <li><a itlist="itList_2" href="#"></a></li>
+                </ul>
+<section id="container-slider">    
+   <a href="javascript: funcionEjecutar('anterior');" class="arrowPrev"><i class="fas fa-chevron-circle-left"></i></a>
+   <a href="javascript: funcionEjecutar('siguiente');" class="arrowNext"><i class="fas fa-chevron-circle-right"></i></a>
+   <ul class="listslider">
+     <li><a itlist="itList_0" href="#" class="item-select-slid"></a></li>
+     <li><a itlist="itList_1" href="#"></a></li>
+     <li><a itlist="itList_2" href="#"></a></li>
+   </ul>
+   <section id="container-slider">    
+    <a href="javascript: funcionEjecutar('anterior');" class="arrowPrev"><i class="fas fa-chevron-circle-left"></i></a>
+    <a href="javascript: funcionEjecutar('siguiente');" class="arrowNext"><i class="fas fa-chevron-circle-right"></i></a>
+    <ul class="listslider">
+      <li><a itlist="itList_0" href="#" class="item-select-slid"></a></li>
+      <li><a itlist="itList_1" href="#"></a></li>
+      <li><a itlist="itList_2" href="#"></a></li>
+    </ul>
+    <ul id="slider">
+      <li style="background-image: url('./assets/mmmm2.png'); z-index:0; opacity: 1;">
+        <div class="content_slider" >
+          <div>
+      </div>
+        </div>
+      </li>
+      <li style="background-image: url('./assets/si.png'); ">
+        <div class="content_slider" >
+          <div>
+      </div>
+        </div>
+      </li>
+      <li style="background-image: url('./assets/si2.png'); ">
+        <div class="content_slider" >
+          <div>
+      </div>
+        </div>
+      </li>
+   </ul>
+ </section>
+ </section>
+</section>
+            
+
+            <div class="subtitulo"> <strong>Recomendados para ti</strong></div>
+
+            <div class="contenedor-cards">
+                <div class="card-martin">
+                    <img src="./assets/heartb.png" class="favorito" alt id="rot">
+                    <img
+                        src="https://images.stockx.com/images/Air-Jordan-4-Retro-Red-Cement-GS-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=1&trim=color&updated_at=1692884926&q=57"
+                        alt>
+                    <p class="titulo">Jordan 4 Retro Red Cement (GS)</p>
+                    <p class="subtitulo-card">Oferta mas baja</p>
+                    <h3 class="precio">$279</h3>
+                    <div class="vendidos">
+                        <p>Ultima venta:$513</p>
+                    </div>
+                </div>
+
+                <div class="card-martin">
+                    <img src="./assets/heartb.png" class="favorito" id="ro"
+                        alt>
+                    <img
+                        src="https://images.stockx.com/images/Air-Jordan-4-Retro-White-Oreo-2021-GS-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=1&trim=color&updated_at=1623166171&q=57"
+                        alt>
+                    <p class="titulo">Jordan 4 Retro White Oreo (2021) (GS)</p>
+                    <p class="subtitulo-card">Oferta mas baja</p>
+                    <h3 class="precio">$424</h3>
+                    <div class="vendidos">
+                        <p>Ultima venta:$441 </p>
+                    </div>
+                </div>
+
+                <div class="card-martin">
+                    <img src="./assets/heartb.png" class="favorito" id="po"
+                        alt>
+                    <img
+                        src="https://images.stockx.com/images/Air-Jordan-4-Retro-Black-Cat-2020-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=1&trim=color&updated_at=1606315877&q=57"
+                        alt>
+                    <p class="titulo">Jordan 4 Retro Black Cat (2020)</p>
+                    <p class="subtitulo-card">Oferta mas baja</p>
+                    <h3 class="precio">$1,078</h3>
+                    <div class="vendidos">
+                        <p>Ultima venta:$678 </p>
+                    </div>
+                </div>
+
+                <div class="card-martin">
+                    <img src="./assets/heartb.png" class="favorito" id="pr"
+                        alt>
+                    <img
+                        src="https://images.stockx.com/images/Air-Jordan-4-Retro-Off-White-Sail-W-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=1&trim=color&updated_at=1607655526&q=57"
+                        alt>
+                    <p class="titulo">Jordan 4 Retro Off-White Sail (Women's)</p>
+                    <p class="subtitulo-card">Oferta mas baja</p>
+                    <h3 class="precio">$1,064</h3>
+                    <div class="vendidos">
+                        <p>Ultima venta:$1000 </p>
+                    </div>
+                </div>
+
+                <div class="card-martin">
+                    <img src="./assets/heartb.png" class="favorito" id="lp"
+                        alt>
+                    <img
+                        src="https://images.stockx.com/images/Air-Jordan-4-Retro-Thunder-2023-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=1&trim=color&updated_at=1680288788&q=57"
+                        alt>
+                    <p class="titulo">Jordan 4 Retro Thunder (2023)</p>
+                    <p class="subtitulo-card">Oferta mas baja</p>
+                    <h3 class="precio">$305</h3>
+                    <div class="vendidos">
+                        <p>Ultima venta:$288</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subtitulo"> <strong>Marcas populares</strong></div>
+
+            <div class="contenedor-imagenes">
+                <div class="mma">
+                    <img
+                        src="https://images-cs.stockx.com/v3/assets/blt818b0c67cf450811/blte38c153e1d700db6/63e298944af54b10f64e8a84/jordan_popular.jpg?quality=80&auto=webp&format=pjpg&dpr=1&width=234&height=160">
+                </div>
+                <div class="mma">
+                    <img
+                        src="https://images-cs.stockx.com/v3/assets/blt818b0c67cf450811/blt283bb9973e6fe3b1/63e3b516842f040f19e3f69c/supreme.jpg?quality=80&auto=webp&format=pjpg&dpr=1&width=234&height=160">
+                </div>
+
+                <div class="mma">
+                    <img
+                        src="https://images-cs.stockx.com/v3/assets/blt818b0c67cf450811/bltdffb6a3f32ddd0b0/63e298a645febe7be921346c/louis-vuitton.jpg?quality=80&auto=webp&format=pjpg&dpr=1&width=234&height=160">
+                </div>
+                <div class="mma">
+                    <img
+                        src="https://images-cs.stockx.com/v3/assets/blt818b0c67cf450811/blt2f968d42e920739f/63e3b4dc21af8910e907f2e6/bearbrick.jpg?quality=80&auto=webp&format=pjpg&dpr=1&width=234&height=160">
+                </div>
+                <div class="mma">
+                    <img
+                        src="https://images-cs.stockx.com/v3/assets/blt818b0c67cf450811/blt17eb912c8a2a66c4/63e3b502eaa37012cc77747d/ps5.jpg?quality=80&auto=webp&format=pjpg&dpr=1&width=234&height=160">
+                </div>
+            </div>
+
+            <div class="gallery js-flickity"
+                data-flickity-options='{ "wrapAround": true }' style="margin-top: 2vw;">
+                <div class="gallery-cell">
+                    <img src="https://images-cs.stockx.com/v3/assets/blt818b0c67cf450811/blt8b1654be0c338f41/64fa3904b169ad02a604ac3b/Untitled_design_(27).png?quality=80&auto=webp&format=pjpg&dpr=1&width=638&height=638" >
+                    <img src="https://images-cs.stockx.com/v3/assets/blt818b0c67cf450811/blt42549916ff65a20f/64fa377ece38f4df94f4a48a/Untitled_design_(25).png?quality=80&auto=webp&format=pjpg&dpr=1&width=638&height=638" >
+                    <img src="https://images-cs.stockx.com/v3/assets/blt818b0c67cf450811/blt5b18c1a3a853fbd6/64f76c1a68d8e1757a601d75/Untitled_design_(21).png?quality=80&auto=webp&format=pjpg&dpr=1&width=638&height=638" >
+                    <img src="https://images-cs.stockx.com/v3/assets/blt818b0c67cf450811/blt394d7979f5927f9e/64f76a4a011d069101e76e28/Untitled_design_(19).png?quality=80&auto=webp&format=pjpg&dpr=1&width=638&height=638" >
+                </div>
+                <div class="gallery-cell">
+                <img src="https://images-cs.stockx.com/v3/assets/blt818b0c67cf450811/blt589a09e1b2991237/64ee2f01ccb8d42aeb4bd812/Untitled_design_(11).png?quality=80&auto=webp&format=pjpg&dpr=1&width=638&height=638" >
+                <img src="https://images-cs.stockx.com/v3/assets/blt818b0c67cf450811/blt2bd13dcbee15ce49/64ee2bb98c665c831f910244/Untitled_design_(9).png?quality=80&auto=webp&format=pjpg&dpr=1&width=638&height=638" >
+                <img src="https://images-cs.stockx.com/v3/assets/blt818b0c67cf450811/blt91d3b431f65566ba/64e7b5bdffe8ee710e3e7c84/Untitled_design_(5).png?quality=80&auto=webp&format=pjpg&dpr=1&width=638&height=638">
+                <img src="https://images-cs.stockx.com/v3/assets/blt818b0c67cf450811/blt1b65837f8915bb16/64e7b25d8c0a70de28820bc8/Untitled_design_(2).png?quality=80&auto=webp&format=pjpg&dpr=1&width=638&height=638" >
+                </div>
+                <div class="gallery-cell">
+               <img src="https://images-cs.stockx.com/v3/assets/blt818b0c67cf450811/blt6ef4d3785558f328/64d5784afe2cccd0a6a2e56b/Untitled_design_(9).png?quality=80&auto=webp&format=pjpg&dpr=1&width=638&height=638" >
+               <img src="https://images-cs.stockx.com/v3/assets/blt818b0c67cf450811/bltb866813c2397b031/64e625ee4275cfe30809c054/Untitled_design_(43).png?quality=80&auto=webp&format=pjpg&dpr=1&width=638&height=638" >
+               <img src="https://images-cs.stockx.com/v3/assets/blt818b0c67cf450811/blta3beede89f14e574/64e4e7d8bce8786c12629116/Untitled_design_(40).png?quality=80&auto=webp&format=pjpg&dpr=1&width=638&height=638" >
+               <img src="https://images-cs.stockx.com/v3/assets/blt818b0c67cf450811/blt357df1a032c5afd4/64df76e1bea67ceb55b1a68a/Untitled_design_(35).png?quality=80&auto=webp&format=pjpg&dpr=1&width=638&height=638" >
+            </div>
+            </div>
+
+            <div class="mosaico-imagenes">
+                <div class="ult">
+                    <img src="https://images-cs.stockx.com/v3/assets/blt818b0c67cf450811/blt1e2279ec7b37cca9/61f7ebffce305334580322d4/SecondaryA-ES.png?format=jpg&auto=webp&height=438"    >
+                    
+                </div>
+                <div class="ult"> 
+                    <img src="https://images-cs.stockx.com/v3/assets/blt818b0c67cf450811/blt6ee59aff595b41d7/61c4412d5304f04f9446a852/Air_Jordan_11_Cool_Grey_assetsSecondaryB-ES.jpg?format=jpg&auto=webp&height=438" >
+                </div>
+            </div>
+            
+            <div class="contenedor-cards">
+                <div class="card-martin">
+                    <img
+                        src="https://images.stockx.com/images/Air-Jordan-4-Retro-Red-Cement-GS-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=1&trim=color&updated_at=1692884926&q=57"
+                        id="id1" alt>
+                </div>
+
+                <div class="card-martin">
+                    <img
+                        src="https://images.stockx.com/images/Air-Jordan-4-Retro-White-Oreo-2021-GS-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=1&trim=color&updated_at=1623166171&q=57"
+                        id="id2" alt>
+                   
+                </div>
+
+                <div class="card-martin">
+                    <img
+                        src="https://images.stockx.com/images/Air-Jordan-4-Retro-Black-Cat-2020-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=avif&auto=compress&dpr=1&trim=color&updated_at=1606315877&q=57"
+                        id="id3" alt>
+                </div>
+                </div>
+                
+            
+                <div id="map"></div>
+        </main>
+        <footer>
+
+            <div class="titulo-footer">
+                <h1 class="titulo">StockX. Accede ahora.</h1>
+            </div>
+
+            <div class="footer1">
+                <div class="columnas" style="font-size: 1rem">
+                    <p style="margin-top: 0;"> <strong> <a href="#">Air jordan</a>
+                        </strong></p>
+                    <p> <strong> <a href="#">Yeezy</a> </strong></p>
+                    <p> <strong> <a href="#">Lo ultimo</a> </strong></p>
+                    <p> <strong> <a href="#">Lanzamientos Populares </a>
+                        </strong></p>
+                    <p> <strong> <a href="#">Impresion de Arte</a> </strong></p>
+                    <p> <strong> <a href="#">Supreme</a> </strong></p>
+                </div>
+
+            </div>
+            <div class="footer1">
+
+                <div class="columnas">
+                    <p style="margin-top: 0;"> <a href="#">Air jordan 1</a></p>
+                    <p> <a href="#">Yeezy boost 350</a></p>
+                    <p> <a href="#">The Drop list</a></p>
+                    <p> <a href="#">Jordan 1 Travis Scott fragment</a></p>
+                    <p> <a href="#">Shepard Fairey</a></p>
+                    <p> <a href="#">T-shirts</a></p>
+                </div>
+
+            </div>
+            <div class="footer1">
+
+                <div class="columnas">
+                    <p style="margin-top: 0;"> <a href="#">Jordan Golf Shoes</a></p>
+                    <p> <a href="#">Yeezy Boost 350 V2</a></p>
+                    <p> <a href="#">Most Expensive Pokémon Cards</a></p>
+                    <p> <a href="#">Jordan 12 Twist</a></p>
+                    <p> <a href="#">KAWS</a></p>
+                    <p> <a href="#">Accessories</a></p>
+                </div>
+
+            </div>
+            <div class="footer1">
+
+                <div class="columnas">
+                    <p style="margin-top: 0;"> <a href="#">Air Jordan 3</a></p>
+                    <p> <a href="#">Yeezy Boost 700</a></p>
+                    <p> <a href="#">Best Kyrie Shoes</a></p>
+                    <p> <a href="#">Nike SB Dunk Low FTC</a></p>
+                    <p> <a href="#">Futura</a></p>
+                    <p> <a href="#">Supreme The North Face</a></p>
+                </div>
+
+            </div>
+
+            <div class="footer1">
+
+                <div class="columnas">
+                    <p style="margin-top: 0;"> <a href="#">Air jordan 11</a></p>
+                    <p> <a href="#">Yeezy 500</a></p>
+                    <p> <a href="#">Xbox Series X</a></p>
+                    <p> <a href="#">Nike Dunk High Black White</a></p>
+                    <p> <a href="#">Takashi Murakami</a></p>
+                    <p> <a href="#">Bottoms</a></p>
+                </div>
+
+            </div>
+
+            <div class="footer1">
+
+                <div class="columnas">
+                    <p style="margin-top: 0;"> <a href="#">Air Jordan 11 Low</a></p>
+                    <p> <a href="#">Yeezy Slides</a></p>
+                    <p> <a href="#">PS5</a></p>
+                    <p> <a href="#">Nike Off-White Air Zoom Tempo NEXT%</a></p>
+                    <p> <a href="#">Yoshitomo Nara</a></p>
+                    <p> <a href="#">Hoodies</a></p>
+                </div>
+
+            </div>
+
+            <div class="footer1">
+
+                <div class="columnas">
+                    <p style="margin-top: 0;"> <a href="#">Jordan 1 Mid</a></p>
+                    <p> <a href="#">Yeezy Foam RNNR</a></p>
+                    <p> <a href="#">The Chrome Hearts Buyer's Guide</a></p>
+                    <p> <a href="#">Yeezy Foam RNNR Ochre</a></p>
+                    <p> <a href="#">Hebru Brantley</a></p>
+                    <p> <a href="#">Supreme Nike</a></p>
+                </div>
+
+            </div>
+
+        </footer>
+        <div class="subfooter">
+            <div class="row">
+                <div class="col">
+                    <button class="beee">
+                        <strong> MEXICO | Español | $US </strong>
+                    </button>
+                </div>
+                <div class="col">
+                    <div class="imag">
+                        <img
+                            src="./assets/—Pngtree—twitter white icon_3570409.png"
+                            alt>
+                        <img src="./assets/social (1).png" alt>
+                        <img src="./assets/ins.png" alt>
+                        <img
+                            src="./assets/—Pngtree—youtube white icon_3570427.png"
+                            alt>
+                    </div>
+
+                </div>
+                <div class="col" style="background: black;">
+                    <div class="fa">
+                        <div class="row2">
+                            <div class="col2">
+                                <p> <a href="#">Ayuda</a></p>
+                            </div>
+                            <div class="col2">
+                                <p> <a href="#">Cómo funciona</a></p>
+                            </div>
+                            <div class="col2">
+                                <p> <a href="#">Privacidad</a></p>
+                            </div>
+                            <div class="col2">
+                                <p> <a href="#">Condiciones</a></p>
+                            </div>
+                            <div class="col2">
+                                <p> <a href="#">Trabajos</a></p>
+                            </div>
+                        </div>
+                        <div class="row2">
+                            <div class="col2">
+                                <p> <a href="#">Contactanos</a></p>
+                            </div>
+                            <div class="col2">
+                                <p> <a href="#">Sugerencia de producto</a></p>
+                            </div>
+                            <div class="col2">
+                                <p> <a href="#">Prensa</a></p>
+                            </div>
+                        </div>
+                        <div class="row2">
+                            <div class="col2">
+                                <p> <a href="#">Declaración sobre accesibilidad</a></p>
+                            </div>
+                            <div class="col2">
+                                <p> <a href="#">Tus opciones de privacidad</a></p>
+                            </div>
+                        </div>
+                        <p style="text-align: right;color: #fff;"> ©2023 StockX. Todos los derechos reservados. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/api.js"></script>
+    <script src="./js/corazon.js"></script>
+    <script src="./js/mapa.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+</html>
